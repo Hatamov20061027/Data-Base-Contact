@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="20dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_contact_activity"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:cardElevation="6dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="#008CFB">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="center">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+<!--   <EditText-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:id="@+id/edt_name"-->
+<!--       android:hint="Name"-->
+<!--       android:textSize="20sp"-->
+<!--       android:inputType="text">-->
+
+<!--   </EditText>-->
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/edt_number"-->
+<!--        android:hint="Number"-->
+<!--        android:textSize="20sp"-->
+<!--        android:inputType="text">-->
+
+<!--    </EditText>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
